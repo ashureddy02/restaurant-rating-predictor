@@ -2,13 +2,14 @@
 import streamlit as st
 import joblib
 import re
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
 import nltk
 
-# --- Step 1: Setup text preprocessing ---
+# --- Step 1: Download NLTK data before importing from them ---
 nltk.download('stopwords')
 nltk.download('wordnet')
+
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
 
 stop_words = set(stopwords.words('english'))
 lemmatizer = WordNetLemmatizer()
