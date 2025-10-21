@@ -1,8 +1,22 @@
+# Virtual environment
 venv/
+
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Data files
 *.csv
+*.xlsx
+*.zip
+
+# Environment files
 .env
+
+# macOS system files
 .DS_Store
+
+# Optional: model files (if you want to keep them local and not push)
+# *.joblib
